@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Assistidos</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Filmes Mais Assistidos</h2>
+        
+        <form action="{{ url_for('filme') }}" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome do Filme:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome do filme" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ano">Ano:</label>
+                <input type="number" class="form-control" id="ano" name="ano" placeholder="Digite o ano de lançamento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="publico">Público:</label>
+                <input type="text" class="form-control" id="publico" name="publico" placeholder="Digite o público-alvo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="idade_minima">Idade Mínima:</label>
+                <input type="number" class="form-control" id="idade_minima" name="idade_minima" placeholder="Digite a idade mínima" required>
+            </div>
+
+            <div class="form-group">
+                <label for="imagem">Imagem (URL):</label>
+                <input type="text" class="form-control" id="imagem" name="imagem" placeholder="Digite a URL da imagem" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Adicionar Filme</button>
+        </form>
+        <div class="row mt-5">
+            {% for filme in filmes %}
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ filme.imagem }}" class="card-img-top" alt="{{ filme.nome }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ filme.nome }}</h5>
+                            <p class="card-text"><strong>Ano:</strong> {{ filme.ano }}</p>
+                            <p class="card-text"><strong>Público:</strong> {{ filme.publico }}</p>
+                            <p class="card-text"><strong>Idade Mínima:</strong> {{ filme.idade_minima }} anos</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

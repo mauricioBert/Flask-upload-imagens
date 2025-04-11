@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Filmes</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .hero-section {
+           
+            background-size: cover;
+            height: 400px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 150px;
+        }
+        .card {
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1 class="display-4">Bem-vindo ao Portal dos Filmes!</h1>
+        <p class="lead">Explore filmes, categorias e mais...</p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://play-lh.googleusercontent.com/64SMx5o6rrX5HIGVkKt8aJaunQ-owWPlvqRv-MBTs4ZMF5yk3-X-nPj7GmSmuPqiAkg23HgOI8O9mNPgLw=w240-h480-rw" class="card-img-top" alt="Filmes Lista">
+                    <div class="card-body">
+                        <h5 class="card-title">Filmes Lista</h5>
+                        <p class="card-text">Veja todos os filmes mais assistidos, com informações incompletas.</p>
+                        <a href="/filmes_lista" class="btn btn-primary">Ir para Filmes Lista</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://musicart.xboxlive.com/7/4d4d6500-0000-0000-0000-000000000002/504/image.jpg" class="card-img-top" alt="Filmes Ficionário">
+                    <div class="card-body">
+                        <h5 class="card-title">Filmes Dicionário</h5>
+                        <p class="card-text">Consulte um dicionário de filmes, com descrições detalhadas.</p>
+                        <a href="/filmes_dicionario" class="btn btn-primary">Ir para Filmes Dicionário</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://br.web.img3.acsta.net/pictures/17/11/06/14/13/5164749.jpg?coixp=50&coiyp=47" class="card-img-top" alt="Filmes JSON Público">
+                    <div class="card-body">
+                        <h5 class="card-title">Rick and Morty JSON Público</h5>
+                        <p class="card-text">Acesse os dados do desenho em formato JSON público.</p>
+                        <a href="/rickandmorty" class="btn btn-primary">Ir para JSON Público</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://br.web.img3.acsta.net/pictures/17/11/06/14/13/5164749.jpg?coixp=50&coiyp=47" class="card-img-top" alt="Filmes JSON Público">
+                    <div class="card-body">
+                        <h5 class="card-title">Cadastro de Alunos</h5>
+                        <p class="card-text">Verifique os alunos existentes da sua sala de aula.</p>
+                        <a href="{{url_for('school')}}" class="btn btn-primary">Ir para a sua sala</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Portal dos Filmes - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "Matrix",
+        "ano": 1999,
+        "publico": "Fãs de ficção científica e ação",
+        "idade_minima": 14,
+        "imagem": "https://m.media-amazon.com/images/I/51EG732BV3L.jpg"
+    },
+    {
+        "nome": "Toy Story",
+        "ano": 1995,
+        "publico": "Infantil e família",
+        "idade_minima": 0,
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/a/a7/Toy_Story_1995.jpg"
+    },
+    {
+        "nome": "Coringa",
+        "ano": 2019,
+        "publico": "Adultos",
+        "idade_minima": 18,
+        "imagem": "https://play-lh.googleusercontent.com/64SMx5o6rrX5HIGVkKt8aJaunQ-owWPlvqRv-MBTs4ZMF5yk3-X-nPj7GmSmuPqiAkg23HgOI8O9mNPgLw"
+    },
+    {
+        "nome": "Interstellar",
+        "ano": 2014,
+        "publico": "Adultos e jovens",
+        "idade_minima": 12,
+        "imagem": "https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg"
+    },
+    {
+        "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+        "ano": 2001,
+        "publico": "Fãs de fantasia e aventura",
+        "idade_minima": 12,
+        "imagem": "https://m.media-amazon.com/images/I/51Qvs9i5a%2BL._AC_.jpg"
+    }
+]
